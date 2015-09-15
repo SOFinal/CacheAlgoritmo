@@ -29,7 +29,7 @@ $python simulador-cache.py workload.txt lru 50000
 ```
 
 
-![alt tag](https://github.com/SOFinal/CacheAlgoritmo/images/lru.jpg)
+![alt tag](https://github.com/SOFinal/CacheAlgoritmo/tree/master/images/lru.jpg)
 
 Ejemplo (evaluando una caché con 50000 entradas): 
 Utilizando la política OPTIMO
@@ -37,7 +37,7 @@ Utilizando la política OPTIMO
 $python simulador-cache.py workload.txt optimo 50000
 ```
 
-![alt tag](https://github.com/SOFinal/CacheAlgoritmo/images/optimo.jpg)
+![alt tag](https://github.com/SOFinal/CacheAlgoritmo/tree/master/images/optimo.jpg)
 
 
 
@@ -46,14 +46,14 @@ Utilizando la política LFU
 ```sh
 $python simulador-cache.py workload.txt lfu 50000
 ```
-![alt tag](https://github.com/SOFinal/CacheAlgoritmo/images/lfu.jpg)
+![alt tag](https://github.com/SOFinal/CacheAlgoritmo/tree/master/images/lfu.jpg)
 
 Ejemplo (evaluando una caché con 50000 entradas): 
 Utilizando la política CLOCK
 ```sh
 $python simulador-cache.py workload.txt clock 50000
 ```
-![alt tag](https://github.com/SOFinal/CacheAlgoritmo/images/clock.jpg)
+![alt tag](https://github.com/SOFinal/CacheAlgoritmo/tree/master/images/clock.jpg)
 
 
 ### Descripciones de políticas de reemplazo implementadas.
