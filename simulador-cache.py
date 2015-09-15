@@ -148,31 +148,18 @@ def lfu():
         if not frame in cache:
 			contador += 1
 		
-			ignored,minimaReferencia = min(cache.iteritems(), key=lambda x:x[1])
-			listaMenosReferenciados=[k for k, v in cache.items() if v == minimaReferencia]
-			if len(listaMenosReferenciados)>1:
-				
-				
-				
-				listacacheMinimos={k:v for k, v in orden.items() if k in listaMenosReferenciados}
-				menosReferenciado,ignored=min(listacacheMinimos.iteritems(), key=lambda x:x[1])
-							
-				
-				
-				del cache[menosReferenciado]
-				del orden[menosReferenciado]
-			else:
-				menosReferenciado,ignored = min(cache.iteritems(), key=lambda x:x[1])
-				del cache[menosReferenciado]
-				del orden[menosReferenciado]
+			menosReferenciado,ignored = min(cache.iteritems(), key=lambda x:x[1])
+			del cache[menosReferenciado]
+			
+			
 			cache[frame]=1
-			orden[frame]=contador
+			
 			pageF += 1
             
         else:
 			contador += 1
 			cache[frame]+=1
-			orden[frame]=contador
+			
 			
     return
 
